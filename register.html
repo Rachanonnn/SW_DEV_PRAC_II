@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get A Booth - Luxury Motor Show 2024</title>
+    <link rel="stylesheet" href="registerstyle.css" />
+  </head>
+  <body>
+    <header class="top-header">
+      <a class="menu-item brand" href="#">Motor Show</a>
+      <a class="menu-item link" href="index.html">Home</a>
+      <a
+        class="menu-item link"
+        href="https://github.com/Rachanonnn"
+        target="_blank"
+        >Contact</a
+      >
+    </header>
+
+    <section>
+      <h2>Booth Registration Form</h2>
+      <form>
+        <label for="companyName">Company Name:</label>
+        <input type="text" id="companyName" name="companyName" required />
+
+        <label for="boothSize">Booth Size:</label>
+        <select id="boothSize" name="boothSize" required>
+          <option value="selectUrboothSize" disabled selected>
+            -- Select your booth size --
+          </option>
+          <option value="10x10">10x10 ft.</option>
+          <option value="10x15">10x15 ft.</option>
+        </select>
+
+        <div class="flex-container">
+          <label for="needTable">Need a table:</label>
+          <input type="checkbox" id="needTable" name="needTable" />
+        </div>
+
+        <label for="chairs">Number of Chairs:</label>
+        <input type="number" id="chairs" name="chairs" required />
+
+        <label for="contactName">Contact Name:</label>
+        <input type="text" id="contactName" name="contactName" required />
+
+        <label for="contactTel">Contact Tel:</label>
+        <input type="tel" id="contactTel" name="contactTel" required />
+
+        <button type="submit">Submit Registration</button>
+      </form>
+    </section>
+
+    <footer class="bottom-footer">
+      <a
+        class="menu-item link"
+        href="https://github.com/Rachanonnn"
+        target="_blank"
+        >6633210721 รัชชานนท์ สรรค์ประสิทธิ์</a
+      >
+    </footer>
+  </body>
+</html>

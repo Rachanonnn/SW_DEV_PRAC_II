@@ -1,0 +1,223 @@
+html, body {
+  background-color: rgb(10, 10, 32);
+  margin: 0;
+  padding: 0;
+}
+
+.top-header {
+  background-color: rgb(22, 22, 22);
+}
+
+.menu-item {
+  color: white;
+  padding: 15px;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+}
+
+.header-info {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  color: #fff;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: all 0.6s ease;
+}
+
+.link::before {
+  bottom: 0;
+  left: 0;
+}
+
+.link:hover::before {
+  transform: scaleX(1);
+}
+
+.brand {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.box2 {
+  margin: 0px;
+  background-image: url('https://wallpapershome.com/images/pages/pic_h/14170.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0);
+}
+
+.box1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.welcome-text {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0px;
+  padding-top: 150px;
+  text-align: center;
+  font-size: 80px;
+  color: rgb(219, 216, 216);
+  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.95);
+}
+
+.p-text {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  padding-bottom: 150px;
+  text-align: center;
+  color: rgb(219, 216, 216);
+  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.95);
+}
+
+.p-text2, h2 {
+  color: white;
+}
+
+.p-text2 {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(187, 186, 186);
+}
+
+.btn {
+  margin: 10px;
+  transition: all .5s ease;
+  color: #fff;
+  border: 3px solid white;
+  font-family:'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-size: 17px;
+  background-color : transparent;
+  padding: 10px;
+  outline: none;
+  border-radius: 4px;
+}
+.btn:hover {
+  color: #001F3F;
+  background-color: #fff;
+}
+
+.p-text3 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+
+.all-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.card {
+  width: 400px;
+  aspect-ratio: 1 / 0.7;
+  margin: 20px;
+  display: inline-block;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+}
+.card .image-box {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.card .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 90%;
+  border-radius: inherit;
+  transition: 0.5s ease-in-out;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid white;
+  border-radius: inherit;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.card:hover img {
+  filter: grayscale(1) brightness(0.4);
+}
+.card:hover::after {
+  opacity: 1;
+  inset: 20px;
+}
+
+.content {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content h2,
+.content p {
+  opacity: 0;
+  transition: 0.4s 0.2s ease;
+}
+.content h2 {
+  margin-bottom: 12px;
+  scale: 0.7;
+}
+.content p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #d1d1d1;
+  transform: translateY(50%);
+}
+.card:hover .content h2 {
+  color: #d1d1d1;
+  scale: 1;
+  opacity: 1;
+}
+.card:hover .content P {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bottom-footer {
+  color: white;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+}
